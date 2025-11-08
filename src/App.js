@@ -10,6 +10,7 @@ import Gallery from './components/Gallery';
 import Booking from './components/Booking';
 import ContactPage from './components/ContactPage';
 import Footer from './components/Footer';
+import ViewDetails from './components/ViewDetail';
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
 <Route path='gallery' element={<Gallery />}/>
 <Route path='/booking' element={<Booking />}/>
 <Route path='/contact' element={<ContactPage />}/>
+<Route path='/services/:serviceId' element={<ViewDetails />} />
       </Routes>
       <Footer />
       

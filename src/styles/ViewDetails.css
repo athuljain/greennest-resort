@@ -1,0 +1,124 @@
+/* --- Page Container --- */
+.view-details-page {
+    background-color: #f7f9f7; /* Very light, natural background */
+}
+
+/* --- Header & Title --- */
+.service-header {
+    margin-top: 2rem;
+}
+
+.service-title-text {
+    color: #4CAF50; /* Primary Green */
+    font-size: 3.5rem;
+}
+
+.service-tagline {
+    color: #6c757d;
+    font-style: italic;
+}
+
+.title-separator {
+    width: 100px;
+    height: 3px;
+    background-color: #8BC34A; /* Lighter Green */
+    margin: 1rem auto 0;
+    border: none;
+    opacity: 1;
+}
+
+/* --- Card Styling --- */
+.detail-card {
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.detail-card:hover {
+    transform: translateY(-5px);
+}
+
+.detail-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    min-height: 350px;
+}
+
+.detail-section-title {
+    color: #4CAF50;
+    font-size: 1.75rem;
+    border-bottom: 2px solid #e9ecef;
+    padding-bottom: 0.5rem;
+}
+
+.detail-description {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #333;
+}
+
+/* --- Features Section --- */
+.features-section {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+}
+
+.feature-header {
+    color: #4CAF50;
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 0;
+}
+
+.feature-icon {
+    color: #8BC34A; /* Highlight for checkmark */
+    font-size: 1.25rem;
+    min-width: 1.25rem;
+}
+
+.feature-text {
+    color: #555;
+    font-weight: 500;
+}
+
+/* --- CTA Button --- */
+.cta-book-button {
+    font-size: 1.5rem;
+    padding: 1rem 4rem;
+    border-radius: 50px;
+    font-weight: bold;
+    /* Use the primary gradient */
+    background-image: linear-gradient(90deg, #4CAF50 0%, #8BC34A 100%);
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.cta-book-button:hover {
+    background-image: linear-gradient(90deg, #8BC34A 0%, #4CAF50 100%);
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive adjustments */
+@media (max-width: 767px) {
+    .service-title-text {
+        font-size: 2.5rem;
+    }
+    .detail-card .row > div:first-child {
+        /* Ensure image spans full width on mobile */
+        width: 100%; 
+    }
+    .detail-card .row > div:last-child {
+        /* Ensure text spans full width on mobile */
+        width: 100%; 
+    }
+    .detail-card .card-body {
+        padding: 2rem !important;
+    }
+}

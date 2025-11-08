@@ -20,7 +20,7 @@ export default function ContactPage() {
         e.preventDefault();
         console.log('Contact Form Submitted:', formData);
         alert(`Thank you, ${formData.name}. We have received your inquiry and will be in touch shortly!`);
-        setFormData({ name: '', email: '', message: '' }); // Clear form
+        setFormData({ name: '', email: '', message: '' }); 
     };
 
     return (

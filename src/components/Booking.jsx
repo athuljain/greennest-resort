@@ -19,7 +19,7 @@ export default function Booking() {
         e.preventDefault();
         console.log('Booking Confirmed:', formData);
         alert(`Booking requested for ${formData.guests} guests from ${formData.checkIn} to ${formData.checkOut}.`);
-        // In a real app, you'd send this data to an API
+       
     };
     
     // Define package options

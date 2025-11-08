@@ -4,16 +4,17 @@ import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaFacebook, FaInstagram, FaTwitter
 import { Link } from 'react-router-dom';
 
 import '../styles/Footer.css';
+// import GreenNestLogo from '../assets/greennestLogo.png'
 
 export default function Footer() {
-    // Get the current year for dynamic copyright
+   
     const currentYear = new Date().getFullYear();
     
     return (
         <footer className="site-footer pt-5 pb-3">
             <Container>
                 <Row>
-                    {/* Column 1: Resort Info & Copyright */}
+                  
                     <Col md={4} className="mb-4">
                         <h5 className="footer-heading mb-3">GreenNest Resorts</h5>
                         <p className="footer-text">
@@ -21,7 +22,7 @@ export default function Footer() {
                         </p>
                     </Col>
 
-                    {/* Column 2: Quick Links */}
+                   
                     <Col md={4} className="mb-4 footer-links-col">
                         <h5 className="footer-heading mb-3">Quick Links</h5>
                         <ul className="list-unstyled footer-list">
