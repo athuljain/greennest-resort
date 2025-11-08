@@ -1,19 +1,19 @@
-/* Apply the green gradient to the entire footer */
+
 .site-footer {
     background-image: linear-gradient(90deg, #56ab2f 0%, #a8e063 100%);
-    color: white; /* Default text color */
+    color: white; 
 }
 
-/* Style the main headings */
+
 .footer-heading {
     font-weight: bold;
     font-size: 1.25rem;
-    border-bottom: 2px solid rgba(255, 255, 255, 0.5); /* Subtle white underline */
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5); 
     padding-bottom: 0.5rem;
     margin-bottom: 1rem;
 }
 
-/* Style list items and general text */
+
 .footer-list {
     padding-left: 0;
 }
@@ -23,7 +23,7 @@
     line-height: 1.8;
 }
 
-/* Link styling */
+
 .footer-link {
     color: white;
     text-decoration: none;
@@ -31,7 +31,7 @@
 }
 
 .footer-link:hover {
-    color: #333; /* Darken slightly on hover for contrast */
+    color: #333; 
     text-decoration: underline;
 }
 
@@ -40,7 +40,7 @@
     vertical-align: middle;
 }
 
-/* --- Social Icons --- */
+
 .social-footer {
     margin-top: 1rem;
 }
@@ -57,7 +57,7 @@
     transform: scale(1.1);
 }
 
-/* --- Copyright --- */
+
 .border-top-custom {
     border-top: 1px solid rgba(255, 255, 255, 0.3) !important;
 }

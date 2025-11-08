@@ -9,7 +9,7 @@ import TopBanner from "./TopBanner"
 export default function HomePage(){
     return(
         <div>
-{/* <h1>Home Page</h1> */}
+
 <TopBanner />
 <AboutPage />
 <Services />

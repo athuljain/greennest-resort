@@ -1,37 +1,36 @@
 .gallery-section {
-    background-color: #fff; /* Clean white background */
+    background-color: #fff; 
 }
 
 .section-title {
     color: #333;
 }
 
-/* Wrapper for positioning the image and overlay */
+
 .gallery-item-wrapper {
     position: relative;
-    overflow: hidden; /* Crucial for clipping the zoom effect */
-    border-radius: 12px; /* Softly rounded corners */
+    overflow: hidden; 
+    border-radius: 12px; 
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     cursor: pointer;
-    line-height: 0; /* Prevents extra spacing below the image */
+    line-height: 0; 
 }
 
 .gallery-image {
     width: 100%;
-    /* Fix the image height/aspect ratio for a consistent grid look */
-    height: 300px; 
+   
     object-fit: cover;
     transition: transform 0.4s ease-in-out;
 }
 
-/* Overlay for hover effect */
+
 .overlay {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(86, 171, 47, 0.5); /* Semi-transparent green matching your theme */
+    background-color: rgba(86, 171, 47, 0.5); 
     opacity: 0;
     transition: opacity 0.4s ease-in-out;
     display: flex;
@@ -39,7 +38,7 @@
     justify-content: center;
 }
 
-/* Caption text inside the overlay */
+
 .caption {
     color: white;
     font-size: 1.5rem;
@@ -49,20 +48,20 @@
     transition: transform 0.4s ease-in-out;
 }
 
-/* Hover effects */
+
 .gallery-item-wrapper:hover .gallery-image {
-    transform: scale(1.05); /* Gentle zoom effect */
+    transform: scale(1.05); 
 }
 
 .gallery-item-wrapper:hover .overlay {
-    opacity: 1; /* Fade in the green overlay */
+    opacity: 1; 
 }
 
 .gallery-item-wrapper:hover .caption {
-    transform: translateY(0); /* Slide the caption into view */
+    transform: translateY(0); 
 }
 
-/* Responsive height adjustment for smaller screens */
+
 @media (max-width: 768px) {
     .gallery-image {
         height: 250px;

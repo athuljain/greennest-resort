@@ -16,13 +16,13 @@ export default function Services() {
   return (
     <div className="services-section py-5">
       <Container>
-        {/* Section Title */}
+
         <h2 className="display-4 fw-bold text-center mb-5 section-title">
           Our Services
         </h2>
         
         <Row>
-          {/* Service 1: Accommodation */}
+        
           <Col md={4} className="mb-4">
             <Card className="service-card h-100 shadow">
               <Card.Img variant="top" src={accoImg1} className="service-card-img" />
@@ -43,7 +43,7 @@ export default function Services() {
             </Card>
           </Col>
 
-          {/* Service 2: Adventure Activities */}
+       
           <Col md={4} className="mb-4">
             <Card className="service-card h-100 shadow">
               <Card.Img variant="top" src={advImg} className="service-card-img" />
@@ -64,7 +64,7 @@ export default function Services() {
             </Card>
           </Col>
 
-          {/* Service 3: Wellness & Spa */}
+       
           <Col md={4} className="mb-4">
             <Card className="service-card h-100 shadow">
               <Card.Img variant="top" src={wellnessImg1} className="service-card-img" />

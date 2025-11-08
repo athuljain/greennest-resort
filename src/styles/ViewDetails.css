@@ -1,15 +1,15 @@
-/* --- Page Container --- */
+
 .view-details-page {
-    background-color: #f7f9f7; /* Very light, natural background */
+    background-color: #f7f9f7; 
 }
 
-/* --- Header & Title --- */
+
 .service-header {
     margin-top: 2rem;
 }
 
 .service-title-text {
-    color: #4CAF50; /* Primary Green */
+    color: #4CAF50; 
     font-size: 3.5rem;
 }
 
@@ -21,13 +21,13 @@
 .title-separator {
     width: 100px;
     height: 3px;
-    background-color: #8BC34A; /* Lighter Green */
+    background-color: #8BC34A; 
     margin: 1rem auto 0;
     border: none;
     opacity: 1;
 }
 
-/* --- Card Styling --- */
+
 .detail-card {
     border: none;
     border-radius: 15px;
@@ -59,7 +59,7 @@
     color: #333;
 }
 
-/* --- Features Section --- */
+
 .features-section {
     background-color: #ffffff;
     border: 1px solid #e0e0e0;
@@ -77,7 +77,7 @@
 }
 
 .feature-icon {
-    color: #8BC34A; /* Highlight for checkmark */
+    color: #8BC34A; 
     font-size: 1.25rem;
     min-width: 1.25rem;
 }
@@ -87,13 +87,12 @@
     font-weight: 500;
 }
 
-/* --- CTA Button --- */
 .cta-book-button {
     font-size: 1.5rem;
     padding: 1rem 4rem;
     border-radius: 50px;
     font-weight: bold;
-    /* Use the primary gradient */
+
     background-image: linear-gradient(90deg, #4CAF50 0%, #8BC34A 100%);
     border: none;
     transition: all 0.3s ease;
@@ -105,17 +104,17 @@
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
-/* Responsive adjustments */
+
 @media (max-width: 767px) {
     .service-title-text {
         font-size: 2.5rem;
     }
     .detail-card .row > div:first-child {
-        /* Ensure image spans full width on mobile */
+
         width: 100%; 
     }
     .detail-card .row > div:last-child {
-        /* Ensure text spans full width on mobile */
+
         width: 100%; 
     }
     .detail-card .card-body {

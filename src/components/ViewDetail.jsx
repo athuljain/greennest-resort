@@ -6,7 +6,7 @@ import { FaCheckCircle } from 'react-icons/fa';
 import "../styles/ViewDetails.css";
 import { servicesData } from '../Data/ServiceData'
 
-// Re-import images for this component to be runnable
+
 import advImg from "../assets/advanture.jpg";
 import accoImg1 from '../assets/accomodation1.jpg';
 import wellnessImg1 from '../assets/wellness.jpg'; 
@@ -18,15 +18,15 @@ const imageMap = {
 };
 
 export default function ViewDetails() {
-    // Get the service ID from the URL (e.g., 'accommodation')
+   
     const { serviceId } = useParams();
 
-    // Look up the service data
+  
     const service = servicesData[serviceId];
 
-    // If service is not found (e.g., bad URL), redirect to a 404 or home
+   
     if (!service) {
-        return <Navigate to="/" />; // Redirects to Home
+        return <Navigate to="/" />; 
     }
 
     const imageUrl = imageMap[service.imageKey];
@@ -36,14 +36,14 @@ export default function ViewDetails() {
             <Container>
                 <Row className="justify-content-center">
                     <Col lg={10}>
-                        {/* Service Title Area */}
+                       
                         <div className="text-center mb-5 service-header">
                             <h1 className="display-4 fw-bold service-title-text">{service.title}</h1>
                             <p className="lead service-tagline">{service.tagline}</p>
                             <hr className="title-separator" />
                         </div>
 
-                        {/* Image and Main Description */}
+                   
                         <Card className="shadow-lg mb-5 detail-card">
                             <Row className="g-0">
                                 <Col md={6}>
@@ -63,7 +63,7 @@ export default function ViewDetails() {
                             </Row>
                         </Card>
 
-                        {/* Key Features Section */}
+                       
                         <div className="features-section p-5 mb-5 shadow-sm rounded-3">
                             <h3 className="fw-bold mb-4 text-center feature-header">Key Features Included</h3>
                             <Row className="g-4">
@@ -77,8 +77,7 @@ export default function ViewDetails() {
                                 ))}
                             </Row>
                         </div>
-                        
-                        {/* Call to Action */}
+             
                         <div className="text-center mt-5">
                             <Button 
                                 as={Link} 
