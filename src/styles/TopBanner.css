@@ -1,0 +1,94 @@
+.top-banner-section {
+
+  background-image: url('../assets/backgroundImg.jpg'); 
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  color: white;
+  text-align: center;
+  position: relative;
+  min-height: 80vh; 
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+}
+
+
+.top-banner-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4); 
+  z-index: 1; 
+}
+
+.top-banner-content {
+  position: relative; 
+  z-index: 2; 
+  padding: 2rem 1rem; 
+}
+
+.company-name {
+  font-size: 3.5rem; 
+  font-weight: 700;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+  margin-bottom: 1rem;
+}
+
+.tagline {
+  font-size: 1.5rem;
+  font-weight: 300;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+  max-width: 700px; 
+  margin: 0 auto 2rem auto; 
+}
+
+.top-banner-button {
+  font-size: 1.2rem;
+  padding: 0.8rem 2.5rem;
+  border-radius: 50px; 
+  font-weight: bold;
+  transition: all 0.3s ease;
+  background-color: #56ab2f; 
+  border-color: #56ab2f;
+}
+
+.top-banner-button:hover {
+  background-color: #a8e063; 
+  border-color: #a8e063;
+  transform: translateY(-3px); 
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .top-banner-section {
+    min-height: 60vh; /* Smaller height on mobile */
+  }
+
+  .company-name {
+    font-size: 2.5rem; /* Smaller font on mobile */
+  }
+
+  .tagline {
+    font-size: 1.2rem;
+  }
+
+  .top-banner-button {
+    font-size: 1rem;
+    padding: 0.6rem 2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .company-name {
+    font-size: 2rem;
+  }
+
+  .tagline {
+    font-size: 1rem;
+  }
+}

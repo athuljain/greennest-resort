@@ -1,0 +1,50 @@
+
+.custom-navbar {
+  background-image: linear-gradient(90deg, #56ab2f 0%, #a8e063 100%);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand-custom {
+  font-size: 1.75rem;
+  font-weight: bold;
+  color: #fff !important;
+}
+
+
+.custom-navbar .nav-link {
+  color: #fff !important;
+  font-weight: 500;
+  margin: 0 0.5rem;
+  transition: opacity 0.2s ease-in-out;
+  opacity: 0.9;
+}
+
+.custom-navbar .nav-link:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+
+
+.cta-button {
+  font-weight: bold;
+  border-radius: 20px;
+  padding: 0.5rem 1.5rem;
+  transition: all 0.3s ease;
+  border: 2px solid #fff;
+}
+
+
+.cta-button:hover {
+  background-color: #fff;
+  color: #56ab2f; 
+  transform: translateY(-2px);
+}
+
+
+.navbar-dark .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.navbar-dark .navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.5);
+}
