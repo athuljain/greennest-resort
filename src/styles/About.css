@@ -1,0 +1,59 @@
+/* About Section Background */
+.about-section {
+    background-color: #f0fff0; /* Very light green/mint background */
+}
+
+.about-title {
+    color: #333;
+    /* Optional: Small underline effect */
+    border-bottom: 3px solid #a8e063; 
+    display: inline-block;
+    padding-bottom: 0.5rem;
+}
+
+/* Green text for the subheading */
+.text-green {
+    color: #56ab2f; /* Darker green from your header */
+}
+
+.about-text {
+    line-height: 1.8;
+    color: #555;
+}
+
+/* Image styling */
+.about-image {
+    width: 100%;
+    /* Ensure a consistent aspect ratio for the image box */
+    height: 400px; 
+    object-fit: cover;
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Rounded corners and subtle shadow provided by React-Bootstrap classes `rounded` and `shadow-lg` */
+
+/* Optional: Slight zoom effect on image hover */
+.image-wrapper {
+    overflow: hidden;
+    border-radius: 8px; /* Match the image rounding */
+}
+
+.image-wrapper:hover .about-image {
+    transform: scale(1.03);
+}
+
+/* Content box styling for better contrast */
+.about-content {
+    background-color: #fff; /* White background for text area */
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    /* Increase padding on larger screens */
+    padding: 2rem; 
+}
+
+/* Responsive adjustment for title size */
+@media (max-width: 768px) {
+    .about-image {
+        height: 300px;
+    }
+}

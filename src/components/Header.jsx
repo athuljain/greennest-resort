@@ -1,7 +1,7 @@
-
 import { Navbar, Nav, Container, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import '../styles/Header.css';
+import GNLogo from '../assets/greennestLogo.png';
 
 export default function Header() {
   return (
@@ -12,9 +12,13 @@ export default function Header() {
       sticky="top"
     >
       <Container>
-        {/* Logo/Brand Name linked to home page */}
+        {/* Logo/Brand now displays the image */}
         <Navbar.Brand as={Link} to="/" className="navbar-brand-custom">
-          YourLogo
+          <img
+            src={GNLogo}
+            alt="Green Nest Resort Logo"
+            className="navbar-logo" // Added class for precise sizing
+          />
         </Navbar.Brand>
         
         {/* Mobile Toggle Button */}
@@ -24,13 +28,14 @@ export default function Header() {
         <Navbar.Collapse id="basic-navbar-nav">
           
           {/* Main Navigation Links */}
-          <Nav className="me-auto">
-            <Nav.Link as={Link} to="/">Home</Nav.Link>
-            <Nav.Link as={Link} to="/about">About</Nav.Link>
-            <Nav.Link as={Link} to="/services">Services</Nav.Link>
-            <Nav.Link as={Link} to="/gallery">Gallery</Nav.Link>
-            <Nav.Link as={Link} to="/booking">Booking</Nav.Link>
-            <Nav.Link as={Link} to="/contact">Contact</Nav.Link>
+          <Nav className="me-auto navigation-links"> 
+            {/* Added custom class for link styling refinement */}
+            <Nav.Link as={Link} to="/" className="nav-link-custom">Home</Nav.Link>
+            <Nav.Link as={Link} to="/about" className="nav-link-custom">About</Nav.Link>
+            <Nav.Link as={Link} to="/services" className="nav-link-custom">Services</Nav.Link>
+            <Nav.Link as={Link} to="/gallery" className="nav-link-custom">Gallery</Nav.Link>
+            <Nav.Link as={Link} to="/booking" className="nav-link-custom">Booking</Nav.Link>
+            <Nav.Link as={Link} to="/contact" className="nav-link-custom">Contact</Nav.Link>
           </Nav>
           
           {/* Call-to-Action Button */}

@@ -1,50 +1,71 @@
-
+/* Apply the green gradient to the Navbar with enhanced shadow */
 .custom-navbar {
-  background-image: linear-gradient(90deg, #56ab2f 0%, #a8e063 100%);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  /* Vibrant Green Gradient */
+  background-image: linear-gradient(90deg, #4CAF50 0%, #8BC34A 100%); 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25); /* Deeper shadow for "lifted" look */
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
 }
 
-.navbar-brand-custom {
-  font-size: 1.75rem;
-  font-weight: bold;
-  color: #fff !important;
+/* Style the brand logo image */
+.navbar-logo {
+  height: 45px; /* Set a fixed height for consistency */
+  width: auto;
+  transition: transform 0.3s ease;
 }
 
+.navbar-brand-custom:hover .navbar-logo {
+  transform: scale(1.05); /* Slight zoom on hover */
+}
 
-.custom-navbar .nav-link {
+/* Style the navigation links */
+.custom-navbar .nav-link-custom {
   color: #fff !important;
   font-weight: 500;
   margin: 0 0.5rem;
-  transition: opacity 0.2s ease-in-out;
-  opacity: 0.9;
+  transition: all 0.2s ease-in-out;
+  padding: 0.5rem 0.8rem;
+  border-radius: 5px;
 }
 
-.custom-navbar .nav-link:hover {
-  opacity: 1;
-  text-decoration: underline;
+.custom-navbar .nav-link-custom:hover {
+  background-color: rgba(255, 255, 255, 0.15); /* Light background change on hover */
+  transform: translateY(-1px); /* Subtle lift on hover */
 }
 
-
+/* Style the "Book Now" CTA button */
 .cta-button {
   font-weight: bold;
-  border-radius: 20px;
-  padding: 0.5rem 1.5rem;
+  border-radius: 50px; /* Full pill shape */
+  padding: 0.6rem 1.6rem;
   transition: all 0.3s ease;
   border: 2px solid #fff;
+  background-color: transparent;
+  color: #fff;
 }
 
-
+/* Button hover effect */
 .cta-button:hover {
   background-color: #fff;
-  color: #56ab2f; 
-  transform: translateY(-2px);
+  color: #4CAF50; /* Match the gradient start color */
+  transform: translateY(-2px); /* Lift button */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
 
-
+/* Ensure the toggler (hamburger icon) is visible on the dark background */
 .navbar-dark .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
 
 .navbar-dark .navbar-toggler {
   border-color: rgba(255, 255, 255, 0.5);
+}
+
+/* Adjust for mobile menu readability */
+@media (max-width: 991px) {
+  .custom-navbar .nav-link-custom {
+    margin: 0.5rem 0;
+    padding: 0.5rem 1rem;
+    text-align: left;
+  }
 }

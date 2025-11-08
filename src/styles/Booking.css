@@ -1,0 +1,76 @@
+/* Booking Section Container */
+.booking-section {
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Parallax effect */
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+/* Dark overlay for readability over the background image */
+.overlay-dark {
+    background-color: rgba(0, 0, 0, 0.5); /* 50% dark overlay */
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    border-radius: 12px;
+}
+
+.booking-title {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+/* Package Details Card */
+.package-details-card {
+    background-color: rgba(255, 255, 255, 0.95); /* Slightly transparent white */
+    border-radius: 12px;
+}
+
+.text-green {
+    color: #56ab2f;
+}
+
+.package-label {
+    color: #333;
+    font-size: 1.15rem;
+    font-weight: 600;
+}
+
+.package-description {
+    font-size: 0.95rem;
+    color: #666;
+}
+
+/* Booking Form Card */
+.booking-form-card {
+    background-color: white;
+    border-radius: 12px;
+    padding: 1rem;
+}
+
+.booking-form-card .form-label {
+    font-weight: 600;
+    color: #555;
+}
+
+/* Style the primary booking button */
+.confirm-booking-btn {
+    /* Use the same green gradient as the header */
+    background-image: linear-gradient(90deg, #56ab2f 0%, #a8e063 100%);
+    border: none;
+    font-weight: bold;
+    padding: 0.75rem 2rem;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+}
+
+.confirm-booking-btn:hover {
+    background-image: linear-gradient(90deg, #a8e063 0%, #56ab2f 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Form control focus color */
+.booking-form-card .form-control:focus {
+    border-color: #56ab2f;
+    box-shadow: 0 0 0 0.25rem rgba(86, 171, 47, 0.25);
+}
